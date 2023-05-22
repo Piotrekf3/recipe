@@ -7,8 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test-no-watch": "ng test --watch false",
     "lint": "ng lint",
-    "prettier": "npx prettier --write ."
+    "prettier": "npx prettier --write .",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -44,6 +46,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "prettier": "2.8.8",
-    "typescript": "~5.0.2"
+    "typescript": "~5.0.2",
+    "husky": "^8.0.0"
   }
 }
